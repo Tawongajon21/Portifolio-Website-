@@ -1,0 +1,295 @@
+--root{
+    --fontFamily:  'Poppins', sans-serif;
+    --textColor:#050c27;
+    --mainWhite:#fff;
+    --navWhite:#f7f7f7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-nav{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 5em;
+    align-items: center;
+    background-color: var(--navWhite);
+    box-shadow: 1px .3px .3px 0.3px #888888;
+    
+}
+.h2-header{
+    padding-left: 2em;
+    color:   #460980;
+}
+
+nav{
+    display: grid;
+}
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+li a{
+    text-decoration: none;
+    font-size: 19px;
+    color:  var(--textColor);;
+}
+.hero{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+}
+.left-text{
+    margin-left: 3em;
+    width: 65%;
+    margin-top: 3em;
+}
+.h4-header h2{
+    color: #460980;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h5{
+  font-weight: 400;
+    margin-top: 1em;
+    color: var(--textColor);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h5 h2{
+    font-weight: 450;
+    color: var(--textColor);
+}
+.main{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1em;
+    color: var(--textColor);
+}
+.main h2{
+    font-weight: 450;
+    color: var(--textColor);
+}
+.photo-part{
+    margin-left: 5em;
+}
+.bg-photo{
+    margin-top: 2em;
+    margin-right: 10em;
+}
+.ctas{
+    margin-top: 2em;
+    display: flex;
+    gap: 3em;
+}
+.btn-project{
+text-decoration: none;
+color: white;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+border: 2px solid #460980;
+padding: 0.3rem 1.3rem;
+border-radius: 5px;
+background-color: #460980;
+letter-spacing: 1px;
+}
+.btn-contact{
+    text-decoration: none;
+color: #460980;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+border: 2px solid #460980;
+padding: 0.3rem 1.3rem;
+border-radius: 5px;
+background-color: white;
+letter-spacing: 1px;
+}
+.skills-part{
+    display: grid;
+    justify-content: center;
+    margin-top: 5em;
+}
+.skills-header{
+    border-bottom: 3px solid #460980;
+
+}
+.h2-header-skills{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.photo-skills{
+   display: flex;
+   justify-content: center;
+   gap: 5em;
+   margin-top: 2em;
+}
+.projects-part{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+
+    gap: 5em;
+}
+.project-card{
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #f7f7f7;
+    padding: 0.5em;
+    position: relative;
+    height: 15em;
+    background-color: #f7f7f7;
+    box-shadow: 1px .3px .3px 0.3px #f7f7f7;
+}
+
+.text-part{
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    height: 4em;
+    justify-content: center;
+}
+.project-name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.source-code{
+    font-family:'Poppins', sans-serif ;
+    color: #460980;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }  
+#center{
+    display: grid;
+    justify-self: center;
+}
+.contact-part{
+    display: grid;
+    justify-content: center;
+}
+.section{
+    display: grid;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-top: 2em;
+}
+.contact-icons{
+    display: flex;
+    gap: 3em;
+    margin-top: 2em;
+    justify-content: center;
+}
+@media (max-width : 760px) {
+    .header-nav{
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-template-columns: auto;
+        height: 6em;
+      
+        
+    }
+    .h2-header{
+        padding-left: 0;
+        display: grid;
+        
+        justify-content: center;
+        width: 100%;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        margin-top: 1em;
+    }
+    .hero{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto ;
+    }
+    .photo-part{
+        display: none;
+    }
+    .left-text{
+      
+        width: 85%;
+        margin-top: 3em;
+    }
+    .ctas{
+        justify-content: center;
+    }
+    .photo-skills{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+        
+        margin-top: 2em;
+     }
+     .projects-part{
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+    
+        gap: 3em;
+    }
+    .contact-part{
+        display: grid;
+        justify-content: center;
+    }
+    .section{
+        display: grid;
+        justify-content: center;
+    }
+    .p-text{
+        width: 50%;
+        display: grid;
+        justify-self:center ;
+    }
+    .contact-icons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+
+}
+
+@media (max-width : 495px) {
+    .photo-skills{
+        display: grid;
+        grid-template-columns: auto ;
+        
+        
+        margin-top: 2em;
+     }
+     .projects-part{
+        margin-top: 2em;
+        display: grid;
+        justify-content: center;
+    
+        gap: 3em;
+    }
+    .contact-icons{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+}
